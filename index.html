@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Local Weather Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow"> <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html"><h5>Weather Dashboard</h5></a>
+		<input class="form-control w-100" id="get-weather" type="text" placeholder="Type here a city and click in Search button.." aria-label="Search">
+		<button class="btn btn-outline-secondary bg-primary text-white" type="button" id="run-search">Search</button>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+				<div class="sidebar-sticky">
+					<div style="text-align: center;" class="card-header">
+						<h6>Last 3 Searches</h6>
+					</div>
+					<table class="table border bg-white mt-5" style="border:thin" style="border:solid">
+						<tbody>
+							<tr>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</nav>
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 mt-5">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+					<div class="card text-white bg-dark mb-3 mx-auto order-0">
+						<div style="text-align: center;" class="card-header">
+							<h3>Current Weather Conditions</h3>
+						</div>
+						<div class="card-body">
+							<div class="city"></div>
+							<img id="wicon"></img>
+							</span>
+							<div class="temp">Temperature</div>
+							<div class="humidity">Humidity</div>
+							<div class="wind">Wind Speed</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white mt-2 p-0 pt-3 pb-3 jumbotron jumbotron-fluid  mx-auto order-0" " >
+					<div class="container ">
+						<h1 class="display-5 ">5-Day Forecast</h1>
+						<div class="row ">
+							<div class="col ">
+								<div class="card text-white bg-primary mb-3" style="max-width: 18rem; ">
+									<div class="card-body "id="day-1">
+										<p class="card-text ">Date</p>
+										<p class="card-text ">Temp</p>
+										<p class="card-text ">Humidity</p>
+									</div>
+								</div>
+							</div>
+							<div class="col ">
+								<div class="card text-white bg-primary mb-3 " style="max-width: 18rem; ">
+									<div class="card-body "id="day-2">
+										<p class="card-text ">Date</p>
+										<p class="card-text ">Temp</p>
+										<p class="card-text ">Humidity</p>
+									</div>
+								</div>
+							</div>
+							<div class="col ">
+								<div class="card text-white bg-primary mb-3 " style="max-width: 18rem; ">
+									<div class="card-body " id="day-3">
+										<p class="card-text ">Date</p>
+										<p class="card-text ">Temp</p>
+										<p class="card-text ">Humidity</p>
+									</div>
+								</div>
+							</div>
+							<div class="col ">
+								<div class="card text-white bg-primary mb-3 " style="max-width: 18rem; ">
+									<div class="card-body " id="day-4">
+										<p class="card-text ">Date</p>
+										<p class="card-text ">Temp</p>
+										<p class="card-text ">Humidity</p>
+									</div>
+								</div>
+							</div>
+							<div class="col ">
+								<div class="card text-white bg-primary mb-3 " style="max-width: 18rem; ">
+									<div class="card-body " id="day-5">
+										<p class="card-text ">Date</p>
+										<p class="card-text ">Temp</p>
+										<p class="card-text ">Humidity</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+        <script src="assets/js/script.js "></script>
+</body>
+</html>
